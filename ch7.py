@@ -6,9 +6,9 @@ def miniMaxSum(arr):
     aux = 0
 
     for i in range(5):
-        x = arr.copy()
-        del(x[aux])
-        result.append(sum(x))
+        i = arr.copy()
+        del(i[aux])
+        result.append(sum(i))
         aux += 1
     
     print(str(min(result)) + ' ' + str(max(result)))
